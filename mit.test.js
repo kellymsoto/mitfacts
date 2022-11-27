@@ -14,6 +14,7 @@ describe('MIT', () => {
     });
 
     test('Colors match', () => {
+        mit.colors = mit.colors[0]+ ' ' + mit.colors[1];
         expect(mit.colors).toContain('Silver Gray');    
     });
 
@@ -23,6 +24,6 @@ describe('MIT', () => {
     });
 
     test('Motto', () => {
-        expect(mit.motto).toMatch('Mens');
+        expect(mit.motto).toMatch('Mens et Manus');
     });
 });
